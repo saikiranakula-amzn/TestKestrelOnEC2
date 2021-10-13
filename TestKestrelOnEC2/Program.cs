@@ -20,8 +20,7 @@ namespace TestKestrelOnEC2
             Host.CreateDefaultBuilder(args)
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
-                    webBuilder.UseStartup<Startup>()
-                    .UseUrls(urls: "http://*:80");
+                    webBuilder.UseStartup<Startup>();
                 });
     }
 }
